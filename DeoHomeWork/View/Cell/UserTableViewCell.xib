@@ -66,6 +66,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="avatarImage" destination="6zf-uy-tYa" id="pam-nL-PsU"/>
+                <outlet property="favoriteButton" destination="nzI-Cn-Kof" id="A3f-kT-uQW"/>
                 <outlet property="loginLabel" destination="F48-ec-hv2" id="nT5-nc-nId"/>
                 <outlet property="urlTextView" destination="Vih-BR-xlQ" id="6LW-1W-KJs"/>
             </connections>

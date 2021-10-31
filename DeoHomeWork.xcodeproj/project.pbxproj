@@ -21,6 +21,7 @@
 		E41D8D72272E4F3E00929B33 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D8D71272E4F3E00929B33 /* UserViewModel.swift */; };
 		E41D8D75272E532900929B33 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D8D74272E532900929B33 /* UserTableViewCell.swift */; };
 		E41D8D77272E542300929B33 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41D8D76272E542300929B33 /* UserTableViewCell.xib */; };
+		E4DE2441272EC7EF004BF863 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE2440272EC7EF004BF863 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E41D8D71272E4F3E00929B33 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		E41D8D74272E532900929B33 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		E41D8D76272E542300929B33 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		E4DE2440272EC7EF004BF863 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				E41D8D59272DA9F900929B33 /* Assets.xcassets */,
 				E41D8D5B272DA9F900929B33 /* LaunchScreen.storyboard */,
 				E41D8D5E272DA9F900929B33 /* Info.plist */,
+				E4DE2440272EC7EF004BF863 /* Constants.swift */,
 			);
 			path = DeoHomeWork;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				E41D8D51272DA9F700929B33 /* AppDelegate.swift in Sources */,
 				E41D8D6B272E32D900929B33 /* MainListViewController.swift in Sources */,
 				E41D8D75272E532900929B33 /* UserTableViewCell.swift in Sources */,
+				E4DE2441272EC7EF004BF863 /* Constants.swift in Sources */,
 				E41D8D70272E4ED800929B33 /* UserModel.swift in Sources */,
 				E41D8D72272E4F3E00929B33 /* UserViewModel.swift in Sources */,
 				E41D8D53272DA9F700929B33 /* SceneDelegate.swift in Sources */,

@@ -32,11 +32,30 @@ class MainListViewController: UIViewController {
         
         viewModel.items.bind(to: mainTableView.rx.items(cellIdentifier: "UserTableViewCell", cellType: UserTableViewCell.self)) { (row,item,cell) in
             cell.item = item
+            cell.favoriteButton.tag = item.id
+            cell.favoriteButton.addTarget(self, action: #selector(self.favoriteUser), for: .touchUpInside)
         }.disposed(by: bag)
         
         mainTableView.rx.modelSelected(User.self).subscribe(onNext: { item in
             print("SelectedItem: \(item.login)")
         }).disposed(by: bag)
+        
+        viewModel.fetchProductList()
+    }
+    
+    @objc func favoriteUser(_ sender : UIButton){
+        let id = sender.tag
+        let userDefaults = UserDefaults.standard
+        
+        var data = userDefaults.array(forKey: kFavoriteIdList) as? [Int] ?? []
+        if let index = data.firstIndex(where: {$0 == id}){
+            data.remove(at: index)
+        }
+        else {
+            data.append(id)
+        }
+        userDefaults.set(data, forKey: kFavoriteIdList)
+        userDefaults.synchronize()
         
         viewModel.fetchProductList()
     }

@@ -8,5 +8,7 @@
 import Foundation
 
 struct User {
+    let id: Int
     let avatar_url, login, url: String
+    let isFavorite: Bool
 }
