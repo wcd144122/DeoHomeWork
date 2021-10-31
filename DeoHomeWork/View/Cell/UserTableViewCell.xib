@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="135" id="rIy-BP-2pn" customClass="UserTableViewCell" customModule="DeoHomeWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rIy-BP-2pn" id="IHx-yP-Hdb">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6zf-uy-tYa">
+                        <rect key="frame" x="5" y="6.5" width="125" height="122"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="6zf-uy-tYa" secondAttribute="height" multiplier="1:1" id="236-bA-aQn"/>
+                            <constraint firstAttribute="height" constant="125" id="6qc-MH-35d"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F48-ec-hv2">
+                        <rect key="frame" x="135" y="5" width="42" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vih-BR-xlQ">
+                        <rect key="frame" x="135" y="31" width="239" height="99"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzI-Cn-Kof">
+                        <rect key="frame" x="374" y="95" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nzI-Cn-Kof" secondAttribute="height" multiplier="1:1" id="9Rz-YP-JpA"/>
+                            <constraint firstAttribute="height" constant="35" id="g76-85-HeQ"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="F48-ec-hv2" firstAttribute="top" secondItem="IHx-yP-Hdb" secondAttribute="top" constant="5" id="6Rx-XP-FGg"/>
+                    <constraint firstAttribute="bottom" secondItem="6zf-uy-tYa" secondAttribute="bottom" constant="5" id="7JM-Da-ITE"/>
+                    <constraint firstAttribute="bottom" secondItem="nzI-Cn-Kof" secondAttribute="bottom" constant="5" id="8w3-HM-2hf"/>
+                    <constraint firstItem="Vih-BR-xlQ" firstAttribute="leading" secondItem="6zf-uy-tYa" secondAttribute="trailing" constant="5" id="MIb-Hh-YDN"/>
+                    <constraint firstItem="6zf-uy-tYa" firstAttribute="leading" secondItem="IHx-yP-Hdb" secondAttribute="leading" constant="5" id="RXq-sY-jeX"/>
+                    <constraint firstAttribute="bottom" secondItem="Vih-BR-xlQ" secondAttribute="bottom" constant="5" id="kJa-a1-9iX"/>
+                    <constraint firstItem="nzI-Cn-Kof" firstAttribute="leading" secondItem="Vih-BR-xlQ" secondAttribute="trailing" id="lT1-lN-XW7"/>
+                    <constraint firstAttribute="trailing" secondItem="nzI-Cn-Kof" secondAttribute="trailing" constant="5" id="rea-jT-KSC"/>
+                    <constraint firstItem="Vih-BR-xlQ" firstAttribute="top" secondItem="F48-ec-hv2" secondAttribute="bottom" constant="5" id="tOq-5v-sgE"/>
+                    <constraint firstItem="6zf-uy-tYa" firstAttribute="top" secondItem="IHx-yP-Hdb" secondAttribute="top" constant="5" id="x44-KW-fax"/>
+                    <constraint firstItem="F48-ec-hv2" firstAttribute="leading" secondItem="6zf-uy-tYa" secondAttribute="trailing" constant="5" id="y14-WQ-E9g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImage" destination="6zf-uy-tYa" id="pam-nL-PsU"/>
+                <outlet property="loginLabel" destination="F48-ec-hv2" id="nT5-nc-nId"/>
+                <outlet property="urlTextView" destination="Vih-BR-xlQ" id="6LW-1W-KJs"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="132.25446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>
